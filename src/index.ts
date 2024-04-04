@@ -50,8 +50,11 @@ export default class WebCache<T> {
     if (isCacheAvailable) {
       const cache = await caches.open(this.cacheName);
       const response = await cache.match(getKey(requestInfo));
-      if (!response) return undefined;
-      return response.json() as Promise<T>;
+      if (!response) {
+        return undefined;
+      }
+
+      return response.json();
     } else {
       return this.getFallbackItem(getKey(requestInfo));
     }
@@ -65,7 +68,8 @@ export default class WebCache<T> {
       // Create headers to include TTL info
       const headers = new Headers({ 'Cache-Control': `max-age=${ttl / 1000}` });
       const response = new Response(JSON.stringify(value), { headers });
-      await cache.put(getKey(requestInfo), response);
+      const key = getKey(requestInfo);
+      await cache.put(key, response);
     } else {
       this.setFallbackItem(getKey(requestInfo), value, ttl);
     }
