@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/sesamyab/web-cache/compare/v1.0.2...v1.0.3) (2024-05-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency zod to v3.23.6 ([07347d4](https://github.com/sesamyab/web-cache/commit/07347d4269669c4d7eba783a24810c84c5c0ad8c))
+
 ## [1.0.2](https://github.com/sesamyab/web-cache/compare/v1.0.1...v1.0.2) (2024-04-04)
 
 
