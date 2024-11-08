@@ -6,7 +6,7 @@
     "registry": "https://registry.npmjs.org/",
     "tag": "latest"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/web-cache.cjs",
   "module": "dist/web-cache.mjs",
   "types": "dist/web-cache.d.ts",
@@ -57,21 +57,21 @@
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^20.11.19",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
+    "@types/node": "^22.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.13.0",
+    "@typescript-eslint/parser": "^8.13.0",
     "copyfiles": "^2.4.1",
-    "dts-bundle-generator": "^9.3.1",
-    "eslint": "^8.56.0",
+    "dts-bundle-generator": "^9.5.1",
+    "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "prettier": "^3.2.5",
-    "semantic-release": "^23.0.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8",
-    "vitest": "^1.4.0"
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.2.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
   },
   "dependencies": {
-    "zod": "^3.22.4"
+    "zod": "^3.23.8"
   }
 }

@@ -1,5 +1,7 @@
 function getUrl(requestInfo: RequestInfo): string {
-  if (typeof requestInfo === 'string') return requestInfo;
+  if (typeof requestInfo === 'string') {
+    return requestInfo;
+  }
   return requestInfo.url;
 }
 
@@ -10,7 +12,7 @@ function getKey(requestInfo: RequestInfo): string {
     const urlObj = new URL(url);
     return urlObj.href;
   } catch (error) {
-    return `http://localhost/${url}`;
+    return `http://localhost/${encodeURIComponent(url)}`;
   }
 }
 
