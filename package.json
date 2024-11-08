@@ -6,7 +6,7 @@
     "registry": "https://registry.npmjs.org/",
     "tag": "latest"
   },
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "dist/web-cache.cjs",
   "module": "dist/web-cache.mjs",
   "types": "dist/web-cache.d.ts",
